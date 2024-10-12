@@ -2,7 +2,13 @@ using System.Text.Json;
 
 public class InputData
 {
-    public List<Creature>? input { get; set; }
+    private List<Creature>? _input;
+
+    public List<Creature>? input
+    {
+        get => _input;
+        set => _input = value;
+    }
 }
 
 public class JsonReader
