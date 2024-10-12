@@ -4,7 +4,8 @@
         {"Star Wars", new List<Creature>()},
         {"Marvel", new List<Creature>()},
         {"Hitchhiker's", new List<Creature>()},
-        {"Lord of the Rings", new List<Creature>()}
+        {"Lord of the Rings", new List<Creature>()},
+        {"Unknown", new List<Creature>()}
     };
     static void Main(string[] args)
     {

@@ -2,6 +2,10 @@ public static class RaceCharacteristics
 {
     private static readonly Dictionary<(string universe, string raceName), Func<Creature, bool>> _raceChecks = new()
     {
+        { ("Unknown", "Unknown"), creature => creature.isHumanoid == null &&
+                                              creature.planet == null &&
+                                              (creature.age == null || creature.age <= 5000) &&
+                                              creature.traits == null },
         // Star Wars Universe: Wookie
         { ("Star Wars", "Wookie"), creature => (creature.isHumanoid == null || creature.isHumanoid == false) &&
                                                (creature.planet == null || creature.planet == "Kashyyyk") &&

@@ -54,20 +54,6 @@
       "planet": "Endor",
       "age": null,
       "traits": null
-    },
-    {
-      "id": 22,
-      "isHumanoid": null,
-      "planet": null,
-      "age": null,
-      "traits": null
-    },
-    {
-      "id": 23,
-      "isHumanoid": null,
-      "planet": null,
-      "age": 321,
-      "traits": null
     }
   ]
 }
