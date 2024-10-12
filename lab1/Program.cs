@@ -1,5 +1,11 @@
 ﻿class Program
 {
+    private static Dictionary<string, List<Creature>> _classifiedCreatures = new(){
+        {"Star Wars", new List<Creature>()},
+        {"Marvel", new List<Creature>()},
+        {"Hitchhiker's", new List<Creature>()},
+        {"Lord of the Rings", new List<Creature>()}
+    };
     static void Main(string[] args)
     {
         string filePath = "input.json";
@@ -8,13 +14,15 @@
         {
             foreach (var creature in inputData.input)
             {
-                Console.WriteLine(RaceCharacteristics.ClassifyCreature(creature));
-                Console.WriteLine($"ID: {creature.id}");
-                Console.WriteLine($"Is Humanoid: {creature.isHumanoid}");
-                Console.WriteLine($"Planet: {creature.planet}");
-                Console.WriteLine($"Age: {creature.age}");
-                Console.WriteLine("Traits: " + (creature.traits != null ? string.Join(", ", creature.traits) : "None"));
-                Console.WriteLine();
+                (string univers, string race) = RaceCharacteristics.ClassifyCreature(creature);
+                _classifiedCreatures[univers].Add(creature);
+            }
+            foreach (var element in _classifiedCreatures)
+            {
+                string univers = element.Key;
+                List<Creature> creatures = element.Value;
+
+                JsonWriter.WriteJson(univers, creatures);
             }
         }
         else

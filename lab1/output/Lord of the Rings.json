@@ -1,0 +1,75 @@
+{
+  "univers": "Lord of the Rings",
+  "input": [
+    {
+      "id": 5,
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": 451,
+      "traits": [
+        "BLONDE",
+        "POINTY_EARS"
+      ]
+    },
+    {
+      "id": 6,
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": 124,
+      "traits": [
+        "SHORT",
+        "BULKY"
+      ]
+    },
+    {
+      "id": 12,
+      "isHumanoid": true,
+      "planet": null,
+      "age": 7523,
+      "traits": null
+    },
+    {
+      "id": 13,
+      "isHumanoid": null,
+      "planet": "Earth",
+      "age": null,
+      "traits": [
+        "SHORT",
+        "BULKY"
+      ]
+    },
+    {
+      "id": 19,
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": 451,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ]
+    },
+    {
+      "id": 20,
+      "isHumanoid": true,
+      "planet": null,
+      "age": null,
+      "traits": [
+        "BULKY"
+      ]
+    },
+    {
+      "id": 24,
+      "isHumanoid": null,
+      "planet": null,
+      "age": 121321,
+      "traits": null
+    },
+    {
+      "id": 25,
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": null,
+      "traits": null
+    }
+  ]
+}
