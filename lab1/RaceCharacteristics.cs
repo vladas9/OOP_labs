@@ -2,6 +2,10 @@ public static class RaceCharacteristics
 {
     private static readonly Dictionary<string, Func<Creature, bool>> _raceChecks = new()
     {
+        { "Unknown", creature => creature.isHumanoid == null &&
+                                 creature.planet == null &&
+                                 (creature.age == null || creature.age <= 5000) &&
+                                 creature.traits ==null},
         // Star Wars Universe: Wookie
         { "Wookie", creature => (creature.isHumanoid == null || creature.isHumanoid == false) &&
                                 (creature.planet == null || creature.planet == "Kashyyyk") &&
@@ -42,13 +46,7 @@ public static class RaceCharacteristics
                                 creature.traits.Contains("GREEN") ||
                                 creature.traits.Contains("BULKY")) },
 
-        // Lord of the Rings Universe: Elf
-        { "Elf", creature => (creature.isHumanoid == null || creature.isHumanoid == true) &&
-                            (creature.planet == null || creature.planet == "Earth") &&
-                            (creature.age == null || creature.age > 200 || creature.age == 1000000) &&
-                            (creature.traits == null ||
-                              creature.traits.Contains("BLONDE") ||
-                              creature.traits.Contains("POINTY_EARS")) },
+      
 
         // Lord of the Rings Universe: Dwarf
         { "Dwarf", creature => (creature.isHumanoid == null || creature.isHumanoid == true) &&
@@ -56,7 +54,14 @@ public static class RaceCharacteristics
                               (creature.age == null || (creature.age >= 0 && creature.age <= 200)) &&
                               (creature.traits == null ||
                                 creature.traits.Contains("SHORT") ||
-                                creature.traits.Contains("BULKY")) }
+                                creature.traits.Contains("BULKY")) },
+
+        // Lord of the Rings Universe: Elf
+        { "Elf", creature => (creature.isHumanoid == null || creature.isHumanoid == true) &&
+                            (creature.planet == null || creature.planet == "Earth") &&
+                            (creature.traits == null ||
+                              creature.traits.Contains("BLONDE") ||
+                              creature.traits.Contains("POINTY_EARS")) }
     };
 
     public static string ClassifyCreature(Creature creature)

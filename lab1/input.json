@@ -5,79 +5,55 @@
       "isHumanoid": false,
       "planet": "Kashyyyk",
       "age": 253,
-      "traits": [
-        "HAIRY",
-        "TALL"
-      ]
+      "traits": ["HAIRY", "TALL"]
     },
     {
       "id": 1,
       "isHumanoid": false,
       "planet": "Endor",
       "age": 34,
-      "traits": [
-        "HAIRY",
-        "SHORT"
-      ]
+      "traits": ["HAIRY", "SHORT"]
     },
     {
       "id": 2,
       "isHumanoid": true,
       "planet": "Asgard",
       "age": 2034,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
+      "traits": ["BLONDE", "TALL"]
     },
     {
       "id": 3,
       "isHumanoid": true,
       "planet": "Betelgeuse",
       "age": 59,
-      "traits": [
-        "EXTRA_ARMS",
-        "EXTRA_HEAD"
-      ]
+      "traits": ["EXTRA_ARMS", "EXTRA_HEAD"]
     },
     {
       "id": 4,
       "isHumanoid": false,
       "planet": "Vogsphere",
       "age": 128,
-      "traits": [
-        "GREEN",
-        "BULKY"
-      ]
+      "traits": ["GREEN", "BULKY"]
     },
     {
       "id": 5,
       "isHumanoid": true,
       "planet": "Earth",
       "age": 451,
-      "traits": [
-        "BLONDE",
-        "POINTY_EARS"
-      ]
+      "traits": ["BLONDE", "POINTY_EARS"]
     },
     {
       "id": 6,
       "isHumanoid": true,
       "planet": "Earth",
       "age": 124,
-      "traits": [
-        "SHORT",
-        "BULKY"
-      ]
+      "traits": ["SHORT", "BULKY"]
     },
     {
       "id": 7,
       "planet": "Kashyyyk",
       "age": 352,
-      "traits": [
-        "HAIRY",
-        "TALL"
-      ]
+      "traits": ["HAIRY", "TALL"]
     },
     {
       "id": 8,
@@ -89,27 +65,19 @@
       "id": 9,
       "isHumanoid": true,
       "planet": "Asgard",
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
+      "traits": ["BLONDE", "TALL"]
     },
     {
       "id": 10,
       "planet": "Betelgeuse",
       "age": 45,
-      "traits": [
-        "EXTRA_ARMS",
-        "EXTRA_HEAD"
-      ]
+      "traits": ["EXTRA_ARMS", "EXTRA_HEAD"]
     },
     {
       "id": 11,
       "isHumanoid": false,
       "age": 128,
-      "traits": [
-        "GREEN"
-      ]
+      "traits": ["GREEN"]
     },
     {
       "id": 12,
@@ -119,19 +87,13 @@
     {
       "id": 13,
       "planet": "Earth",
-      "traits": [
-        "SHORT",
-        "BULKY"
-      ]
+      "traits": ["SHORT", "BULKY"]
     },
     {
       "id": 14,
       "isHumanoid": false,
       "age": 253,
-      "traits": [
-        "HAIRY",
-        "TALL"
-      ]
+      "traits": ["HAIRY", "TALL"]
     },
     {
       "id": 15,
@@ -141,48 +103,45 @@
       "id": 16,
       "isHumanoid": true,
       "age": 154,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
+      "traits": ["BLONDE", "TALL"]
     },
     {
       "id": 17,
       "age": 26,
-      "traits": [
-        "EXTRA_ARMS"
-      ]
+      "traits": ["EXTRA_ARMS"]
     },
     {
       "id": 18,
       "isHumanoid": false,
-      "traits": [
-        "BULKY"
-      ]
+      "traits": ["BULKY"]
     },
     {
       "id": 19,
       "isHumanoid": true,
       "planet": "Earth",
       "age": 451,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
+      "traits": ["BLONDE", "TALL"]
     },
     {
       "id": 20,
       "isHumanoid": true,
-      "traits": [
-        "BULKY"
-      ]
+      "traits": ["BULKY"]
     },
     {
       "id": 21,
       "age": 82,
-      "traits": [
-        "EXTRA_HEAD"
-      ]
+      "traits": ["EXTRA_HEAD"]
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23,
+      "age": 321
+    },
+    {
+      "id": 24,
+      "age": 121321
     }
   ]
 }
