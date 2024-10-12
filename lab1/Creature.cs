@@ -5,7 +5,7 @@ public class Creature
     private readonly string? _planet;
     private readonly int? _age;
     private readonly List<string>? _traits;
-    private string _univers;
+    // private string _univers;
 
     public Creature(int id, bool? isHumanoid, string? planet, int? age, List<string>? traits)
     {
@@ -14,16 +14,16 @@ public class Creature
         _planet = planet;
         _age = age;
         _traits = traits;
-        _univers = "";
+        // _univers = "";
     }
     public int id => _id;
     public bool? isHumanoid => _isHumanoid;
     public string? planet => _planet;
     public int? age => _age;
     public List<string>? traits => _traits;
-    public string univers
-    {
-        get => _univers;
-        protected set => _univers = value;
-    }
+    // public string univers
+    // {
+    //     get => _univers;
+    //     protected set => _univers = value;
+    // }
 }

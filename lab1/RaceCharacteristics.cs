@@ -13,7 +13,6 @@ public static class RaceCharacteristics
                                 (creature.traits == null ||
                                 creature.traits.Contains("HAIRY") ||
                                 creature.traits.Contains("TALL")) },
-
         // Star Wars Universe: Ewok
         { "Ewok", creature => (creature.isHumanoid == null || creature.isHumanoid == false) &&
                               (creature.planet == null || creature.planet == "Endor") &&
@@ -21,7 +20,6 @@ public static class RaceCharacteristics
                               (creature.traits == null ||
                               creature.traits.Contains("SHORT") ||
                               creature.traits.Contains("HAIRY")) },
-
         // Marvel Universe: Asgardian
         { "Asgardian", creature => (creature.isHumanoid == null || creature.isHumanoid == true) &&
                                   (creature.planet == null || creature.planet == "Asgard") &&
@@ -29,7 +27,6 @@ public static class RaceCharacteristics
                                   (creature.traits == null ||
                                     creature.traits.Contains("BLONDE") ||
                                     creature.traits.Contains("TALL")) },
-
         // Hitchhiker's Universe: Betelgeusian
         { "Betelgeusian", creature => (creature.isHumanoid == null || creature.isHumanoid == true) &&
                                       (creature.planet == null || creature.planet == "Betelgeuse") &&
@@ -37,7 +34,6 @@ public static class RaceCharacteristics
                                       (creature.traits == null ||
                                       creature.traits.Contains("EXTRA_ARMS") ||
                                       creature.traits.Contains("EXTRA_HEAD")) },
-
         // Hitchhiker's Universe: Vogon
         { "Vogon", creature => (creature.isHumanoid == null || creature.isHumanoid == false) &&
                               (creature.planet == null || creature.planet == "Vogsphere") &&
@@ -45,9 +41,6 @@ public static class RaceCharacteristics
                               (creature.traits == null ||
                                 creature.traits.Contains("GREEN") ||
                                 creature.traits.Contains("BULKY")) },
-
-      
-
         // Lord of the Rings Universe: Dwarf
         { "Dwarf", creature => (creature.isHumanoid == null || creature.isHumanoid == true) &&
                               (creature.planet == null || creature.planet == "Earth") &&
@@ -55,7 +48,6 @@ public static class RaceCharacteristics
                               (creature.traits == null ||
                                 creature.traits.Contains("SHORT") ||
                                 creature.traits.Contains("BULKY")) },
-
         // Lord of the Rings Universe: Elf
         { "Elf", creature => (creature.isHumanoid == null || creature.isHumanoid == true) &&
                             (creature.planet == null || creature.planet == "Earth") &&

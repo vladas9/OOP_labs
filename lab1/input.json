@@ -132,6 +132,7 @@
       "age": 82,
       "traits": ["EXTRA_HEAD"]
     },
+
     {
       "id": 22
     },
@@ -142,6 +143,11 @@
     {
       "id": 24,
       "age": 121321
+    },
+    {
+      "id": 25,
+      "planet": "Earth",
+      "isHumanoid": true
     }
   ]
 }
