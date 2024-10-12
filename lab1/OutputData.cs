@@ -11,7 +11,7 @@ public class OutputData
         set => _univers = value;
     }
 
-    public List<Creature>? input
+    public List<Creature>? output
     {
         get => _output;
         set => _output = value;
@@ -28,7 +28,7 @@ public class JsonWriter
         var outputData = new OutputData
         {
             univers = univers,
-            input = creatures
+            output = creatures
         };
 
         string jsonString = JsonSerializer.Serialize(outputData, new JsonSerializerOptions
