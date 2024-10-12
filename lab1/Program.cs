@@ -8,6 +8,7 @@
         {
             foreach (var creature in inputData.input)
             {
+                Console.WriteLine(RaceCharacteristics.ClassifyCreature(creature));
                 Console.WriteLine($"ID: {creature.id}");
                 Console.WriteLine($"Is Humanoid: {creature.isHumanoid}");
                 Console.WriteLine($"Planet: {creature.planet}");
