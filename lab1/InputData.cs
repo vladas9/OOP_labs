@@ -1,15 +1,6 @@
 using System.Text.Json;
 
-public class InputData
-{
-    private List<Creature>? _input;
-
-    public List<Creature>? input
-    {
-        get => _input;
-        set => _input = value;
-    }
-}
+public record InputData(List<Creature> input);
 
 public class JsonReader
 {

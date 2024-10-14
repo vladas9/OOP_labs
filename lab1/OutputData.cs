@@ -1,22 +1,7 @@
 using System.Text.Json;
 
-public class OutputData
-{
-    private string _univers = "";
-    private List<Creature>? _output;
+public record OutputData(string univers, List<Creature> output);
 
-    public string univers
-    {
-        get => _univers;
-        set => _univers = value;
-    }
-
-    public List<Creature>? output
-    {
-        get => _output;
-        set => _output = value;
-    }
-}
 
 public class JsonWriter
 {
@@ -25,11 +10,7 @@ public class JsonWriter
     {
         string outputPath = $"output/{univers}.json";
 
-        var outputData = new OutputData
-        {
-            univers = univers,
-            output = creatures
-        };
+        var outputData = new OutputData(univers, creatures);
 
         string jsonString = JsonSerializer.Serialize(outputData, new JsonSerializerOptions
         {
