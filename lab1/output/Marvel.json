@@ -9,7 +9,8 @@
       "traits": [
         "BLONDE",
         "TALL"
-      ]
+      ],
+      "race": "Asgardian"
     },
     {
       "id": 9,
@@ -19,7 +20,8 @@
       "traits": [
         "BLONDE",
         "TALL"
-      ]
+      ],
+      "race": "Asgardian"
     },
     {
       "id": 16,
@@ -29,7 +31,8 @@
       "traits": [
         "BLONDE",
         "TALL"
-      ]
+      ],
+      "race": "Asgardian"
     }
   ]
 }

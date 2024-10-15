@@ -9,7 +9,8 @@
       "traits": [
         "BLONDE",
         "POINTY_EARS"
-      ]
+      ],
+      "race": "Elf"
     },
     {
       "id": 6,
@@ -19,14 +20,16 @@
       "traits": [
         "SHORT",
         "BULKY"
-      ]
+      ],
+      "race": "Dwarf"
     },
     {
       "id": 12,
       "isHumanoid": true,
       "planet": null,
       "age": 7523,
-      "traits": null
+      "traits": null,
+      "race": "Elf"
     },
     {
       "id": 13,
@@ -36,7 +39,8 @@
       "traits": [
         "SHORT",
         "BULKY"
-      ]
+      ],
+      "race": "Dwarf"
     },
     {
       "id": 19,
@@ -46,7 +50,8 @@
       "traits": [
         "BLONDE",
         "TALL"
-      ]
+      ],
+      "race": "Elf"
     },
     {
       "id": 20,
@@ -55,21 +60,24 @@
       "age": null,
       "traits": [
         "BULKY"
-      ]
+      ],
+      "race": "Dwarf"
     },
     {
       "id": 24,
       "isHumanoid": null,
       "planet": null,
       "age": 121321,
-      "traits": null
+      "traits": null,
+      "race": "Elf"
     },
     {
       "id": 25,
       "isHumanoid": true,
       "planet": "Earth",
       "age": null,
-      "traits": null
+      "traits": null,
+      "race": "Dwarf"
     }
   ]
 }

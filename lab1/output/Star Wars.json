@@ -9,7 +9,8 @@
       "traits": [
         "HAIRY",
         "TALL"
-      ]
+      ],
+      "race": "Wookie"
     },
     {
       "id": 1,
@@ -19,7 +20,8 @@
       "traits": [
         "HAIRY",
         "SHORT"
-      ]
+      ],
+      "race": "Ewok"
     },
     {
       "id": 7,
@@ -29,14 +31,16 @@
       "traits": [
         "HAIRY",
         "TALL"
-      ]
+      ],
+      "race": "Wookie"
     },
     {
       "id": 8,
       "isHumanoid": false,
       "planet": "Endor",
       "age": 22,
-      "traits": null
+      "traits": null,
+      "race": "Ewok"
     },
     {
       "id": 14,
@@ -46,14 +50,16 @@
       "traits": [
         "HAIRY",
         "TALL"
-      ]
+      ],
+      "race": "Wookie"
     },
     {
       "id": 15,
       "isHumanoid": null,
       "planet": "Endor",
       "age": null,
-      "traits": null
+      "traits": null,
+      "race": "Ewok"
     }
   ]
 }

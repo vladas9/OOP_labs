@@ -16,6 +16,7 @@
             foreach (var creature in inputData.input)
             {
                 (string univers, string race) = RaceCharacteristics.ClassifyCreature(creature);
+                creature.race = race;
                 _classifiedCreatures[univers].Add(creature);
             }
             foreach (var element in _classifiedCreatures)

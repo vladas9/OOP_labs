@@ -6,14 +6,16 @@
       "isHumanoid": null,
       "planet": null,
       "age": null,
-      "traits": null
+      "traits": null,
+      "race": "Unknown"
     },
     {
       "id": 23,
       "isHumanoid": null,
       "planet": null,
       "age": 321,
-      "traits": null
+      "traits": null,
+      "race": "Unknown"
     }
   ]
 }

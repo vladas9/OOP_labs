@@ -9,7 +9,8 @@
       "traits": [
         "EXTRA_ARMS",
         "EXTRA_HEAD"
-      ]
+      ],
+      "race": "Betelgeusian"
     },
     {
       "id": 4,
@@ -19,7 +20,8 @@
       "traits": [
         "GREEN",
         "BULKY"
-      ]
+      ],
+      "race": "Vogon"
     },
     {
       "id": 10,
@@ -29,7 +31,8 @@
       "traits": [
         "EXTRA_ARMS",
         "EXTRA_HEAD"
-      ]
+      ],
+      "race": "Betelgeusian"
     },
     {
       "id": 11,
@@ -38,7 +41,8 @@
       "age": 128,
       "traits": [
         "GREEN"
-      ]
+      ],
+      "race": "Vogon"
     },
     {
       "id": 17,
@@ -47,7 +51,8 @@
       "age": 26,
       "traits": [
         "EXTRA_ARMS"
-      ]
+      ],
+      "race": "Betelgeusian"
     },
     {
       "id": 18,
@@ -56,7 +61,8 @@
       "age": null,
       "traits": [
         "BULKY"
-      ]
+      ],
+      "race": "Vogon"
     },
     {
       "id": 21,
@@ -65,7 +71,8 @@
       "age": 82,
       "traits": [
         "EXTRA_HEAD"
-      ]
+      ],
+      "race": "Betelgeusian"
     }
   ]
 }
