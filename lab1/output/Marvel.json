@@ -1,0 +1,38 @@
+{
+  "univers": "Marvel",
+  "output": [
+    {
+      "id": 2,
+      "isHumanoid": true,
+      "planet": "Asgard",
+      "age": 2034,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ],
+      "race": "Asgardian"
+    },
+    {
+      "id": 9,
+      "isHumanoid": true,
+      "planet": "Asgard",
+      "age": null,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ],
+      "race": "Asgardian"
+    },
+    {
+      "id": 16,
+      "isHumanoid": true,
+      "planet": null,
+      "age": 154,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ],
+      "race": "Asgardian"
+    }
+  ]
+}

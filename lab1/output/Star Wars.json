@@ -1,0 +1,65 @@
+{
+  "univers": "Star Wars",
+  "output": [
+    {
+      "id": 0,
+      "isHumanoid": false,
+      "planet": "Kashyyyk",
+      "age": 253,
+      "traits": [
+        "HAIRY",
+        "TALL"
+      ],
+      "race": "Wookie"
+    },
+    {
+      "id": 1,
+      "isHumanoid": false,
+      "planet": "Endor",
+      "age": 34,
+      "traits": [
+        "HAIRY",
+        "SHORT"
+      ],
+      "race": "Ewok"
+    },
+    {
+      "id": 7,
+      "isHumanoid": null,
+      "planet": "Kashyyyk",
+      "age": 352,
+      "traits": [
+        "HAIRY",
+        "TALL"
+      ],
+      "race": "Wookie"
+    },
+    {
+      "id": 8,
+      "isHumanoid": false,
+      "planet": "Endor",
+      "age": 22,
+      "traits": null,
+      "race": "Ewok"
+    },
+    {
+      "id": 14,
+      "isHumanoid": false,
+      "planet": null,
+      "age": 253,
+      "traits": [
+        "HAIRY",
+        "TALL"
+      ],
+      "race": "Wookie"
+    },
+    {
+      "id": 15,
+      "isHumanoid": null,
+      "planet": "Endor",
+      "age": null,
+      "traits": null,
+      "race": "Ewok"
+    }
+  ]
+}
