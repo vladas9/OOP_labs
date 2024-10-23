@@ -12,8 +12,14 @@
         System.Console.WriteLine();
         display1.CompareWithMonitor(display3);
     }
+    static void Task_2(string path)
+    {
+        TextData data = FileReader.ReadTxtInTextData(path);
+        Console.WriteLine(data);
+    }
     static void Main(string[] Args)
     {
         Task_1();
+        Task_2(Args[0]);
     }
 }
