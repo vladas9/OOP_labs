@@ -15,8 +15,11 @@
 
     static void Task_2(string path)
     {
-        TextData data = FileReader.ReadTxtInTextData(path);
-        Console.WriteLine(data);
+        List<TextData> dataList = FileReader.ReadTxtInTextData([path]);
+        foreach (var data in dataList)
+        {
+            Console.WriteLine(data + "\n");
+        }
     }
 
     static void Task_3()
@@ -38,6 +41,15 @@
         assistant.Assist();
     }
 
+    static void Task_4(string[] paths)
+    {
+        List<TextData> dataList = FileReader.ReadTxtInTextData(paths);
+        foreach (var data in dataList)
+        {
+            Console.WriteLine(data + "\n");
+        }
+    }
+
     static void Main(string[] Args)
     {
         Console.WriteLine("Choose a task to perform(tasks number 1-4):");
@@ -52,6 +64,9 @@
                 break;
             case 3:
                 Task_3();
+                break;
+            case 4:
+                Task_4(Args);
                 break;
         }
     }
