@@ -25,8 +25,8 @@ public class Display
 
         Dictionary<int, string> sizeComparison = new Dictionary<int, string>
             {
-                { 1, $"{Model} is larger in size with an area of {thisArea} pixels." },
-                { -1, $"{otherDisplay.Model} is larger in size with an area of {otherArea} pixels." },
+                { 1, $"{Model} is larger in size with an area of {thisArea}." },
+                { -1, $"{otherDisplay.Model} is larger in size with an area of {otherArea}." },
                 { 0, $"Both {Model} and {otherDisplay.Model} have the same size with an area of {thisArea} pixels." }
             };
 
