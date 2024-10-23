@@ -27,7 +27,7 @@ public class Display
             {
                 { 1, $"{Model} is larger in size with an area of {thisArea}." },
                 { -1, $"{otherDisplay.Model} is larger in size with an area of {otherArea}." },
-                { 0, $"Both {Model} and {otherDisplay.Model} have the same size with an area of {thisArea} pixels." }
+                { 0, $"Both {Model} and {otherDisplay.Model} have the same size with an area of {thisArea}." }
             };
 
         int comparisonResult = thisArea.CompareTo(otherArea);
@@ -45,14 +45,16 @@ public class Display
             };
 
         int comparisonResult = PPI.CompareTo(otherDisplay.PPI);
-        Console.WriteLine($"Comparing sharpness between {Model} and {otherDisplay.Model}:");
+        Console.WriteLine($"\nComparing sharpness between {Model} and {otherDisplay.Model}:");
         Console.WriteLine(sharpnessComparison[comparisonResult]);
     }
 
     public void CompareWithMonitor(Display otherDisplay)
     {
-        Console.WriteLine($"Comparing overall (size and sharpness) between {Model} and {otherDisplay.Model}:");
+        Console.WriteLine("---------------------------------------------------------------------------------------");
+        Console.WriteLine($"\nComparing overall (size and sharpness) between {Model} and {otherDisplay.Model}:\n");
         CompareSize(otherDisplay);
         CompareSharpness(otherDisplay);
+        Console.WriteLine("---------------------------------------------------------------------------------------");
     }
 }

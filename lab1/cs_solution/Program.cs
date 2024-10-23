@@ -2,15 +2,16 @@
 {
     static void Task_1()
     {
-        Display display1 = new Display(1920, 1080, 300, "Display1");
-        Display display2 = new Display(2560, 1440, 400, "Display2");
-        Display display3 = new Display(3840, 2160, 500, "Display3");
+        Display display1 = new Display(50, 100, 300, "Display1");
+        Display display2 = new Display(20, 60, 400, "Display2");
+        Display display3 = new Display(140, 50, 500, "Display3");
 
         display1.CompareWithMonitor(display2);
         System.Console.WriteLine();
         display2.CompareWithMonitor(display3);
         System.Console.WriteLine();
         display1.CompareWithMonitor(display3);
+        System.Console.WriteLine();
     }
 
     static void Task_2(string path)
@@ -52,22 +53,28 @@
 
     static void Main(string[] Args)
     {
-        Console.WriteLine("Choose a task to perform(tasks number 1-4):");
-        var choice = Convert.ToInt32(Console.ReadLine());
-        switch (choice)
+        int choice = -1;
+        while (choice != 0)
         {
-            case 1:
-                Task_1();
-                break;
-            case 2:
-                Task_2(Args[0]);
-                break;
-            case 3:
-                Task_3();
-                break;
-            case 4:
-                Task_4(Args);
-                break;
+            Console.WriteLine("Choose a task to perform(tasks number 1-4):");
+            choice = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 1:
+                    Task_1();
+                    break;
+                case 2:
+                    Task_2(Args[0]);
+                    break;
+                case 3:
+                    Task_3();
+                    break;
+                case 4:
+                    Task_4(Args);
+                    break;
+                case 0:
+                    break;
+            }
         }
     }
 }
