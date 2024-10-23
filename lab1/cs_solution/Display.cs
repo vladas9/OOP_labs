@@ -1,18 +1,5 @@
-public class Display
+public record Display(int Width, int Height, float PPI, string Model)
 {
-    public int Width { get; private set; }
-    public int Height { get; private set; }
-    public float PPI { get; private set; }
-    public string Model { get; private set; }
-
-    public Display(int width, int height, float ppi, string model)
-    {
-        Width = width;
-        Height = height;
-        PPI = ppi;
-        Model = model;
-    }
-
     private int GetArea()
     {
         return Width * Height;
