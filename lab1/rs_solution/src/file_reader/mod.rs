@@ -1,8 +1,7 @@
-use std::{ffi::OsStr, fs, path::PathBuf};
-
-use text_data::TextData;
-
 pub mod text_data;
+
+use std::{ffi::OsStr, fs, path::PathBuf};
+use text_data::TextData;
 
 pub struct FileReader {}
 
