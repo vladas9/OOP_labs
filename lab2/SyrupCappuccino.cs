@@ -7,4 +7,10 @@ public class SyrupCappuccino : Cappuccino
     {
         this.syrup = syrup;
     }
+
+    public override void printCoffeeDetails()
+    {
+        base.printCoffeeDetails();
+        Console.WriteLine($"{name} syrup: {syrup} ml");
+    }
 }

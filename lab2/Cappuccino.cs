@@ -6,4 +6,9 @@ public class Cappuccino : Coffee
     {
         this.mlOfMilk = mlOfMilk;
     }
+    public override void printCoffeeDetails()
+    {
+        base.printCoffeeDetails();
+        Console.WriteLine($"{name} milk: {mlOfMilk} ml");
+    }
 }

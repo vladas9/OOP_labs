@@ -7,4 +7,9 @@ public class Coffee
     {
         this.coffeeIntensity = coffeeIntensity;
     }
+
+    public virtual void printCoffeeDetails()
+    {
+        Console.WriteLine($"\n{name} Intensity: {coffeeIntensity}");
+    }
 }

@@ -2,7 +2,7 @@ public enum Intensity
 {
     LIGHT,
     NORMAL,
-    STRING,
+    STRONG,
 }
 
 public enum SyrupType

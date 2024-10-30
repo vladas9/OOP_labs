@@ -10,4 +10,11 @@ public class PumpkinSpiceLatte : Coffee
         this.mlOfMilk = mlOfMilk;
         this.mgOfPumpkinSpice = mgOfPumpkinSpice;
     }
+
+    public override void printCoffeeDetails()
+    {
+        base.printCoffeeDetails();
+        Console.WriteLine($"{name} milk: {mlOfMilk} ml");
+        Console.WriteLine($"{name} pumpkin spice: {mgOfPumpkinSpice} mg");
+    }
 }
