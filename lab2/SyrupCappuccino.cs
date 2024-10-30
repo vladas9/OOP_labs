@@ -1,7 +1,7 @@
 public class SyrupCappuccino : Cappuccino
 {
     public SyrupType syrup { get; private set; }
-    const String name = "SyrupCappuccino";
+    public override string name => "SyrupCappuccino";
     public SyrupCappuccino(Intensity coffeeIntensity, int mlOfMilk, SyrupType syrup)
         : base(coffeeIntensity, mlOfMilk)
     {
@@ -12,5 +12,11 @@ public class SyrupCappuccino : Cappuccino
     {
         base.printCoffeeDetails();
         Console.WriteLine($"{name} syrup: {syrup} ml");
+    }
+
+    public override void make()
+    {
+        base.make();
+        Console.WriteLine($"Adding {syrup} of water to the Cappuccino.");
     }
 }
