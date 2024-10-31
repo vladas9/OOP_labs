@@ -1,4 +1,6 @@
-public class Americano : Coffee
+namespace CoffeShop;
+
+internal class Americano : Coffee
 {
     public int mlOfWater { get; private set; }
     public override string name => "Americano";
@@ -14,9 +16,16 @@ public class Americano : Coffee
         Console.WriteLine($"{name} water: {mlOfWater} ml");
     }
 
-    public override void make()
+    protected override void prepare()
     {
-        base.make();
-        Console.WriteLine($"Adding {mlOfWater}ml of water to the Cappuccino.");
+        base.prepare();
+
+        Console.WriteLine($"Adding {mlOfWater}ml of water to the {name}");
+    }
+
+    public Americano makeAmericano()
+    {
+        prepare();
+        return this;
     }
 }

@@ -1,13 +1,13 @@
-public class PumpkinSpiceLatte : Coffee
+namespace CoffeShop;
+
+internal class PumpkinSpiceLatte : Cappuccino
 {
-    public int mlOfMilk { get; private set; }
     public int mgOfPumpkinSpice;
     public override string name => "PumpkinSpiceLatte";
 
     public PumpkinSpiceLatte(Intensity coffeeIntensity, int mlOfMilk, int mgOfPumpkinSpice)
-        : base(coffeeIntensity)
+        : base(coffeeIntensity, mlOfMilk)
     {
-        this.mlOfMilk = mlOfMilk;
         this.mgOfPumpkinSpice = mgOfPumpkinSpice;
     }
 
@@ -18,9 +18,15 @@ public class PumpkinSpiceLatte : Coffee
         Console.WriteLine($"{name} pumpkin spice: {mgOfPumpkinSpice} mg");
     }
 
-    public override void make()
+    protected override void prepare()
     {
-        base.make();
-        Console.WriteLine($"Adding {mlOfMilk}ml of milk and {mgOfPumpkinSpice}mg of pumpkin spice to the Pumpkin Spice Latte.");
+        base.prepare();
+        Console.WriteLine($"Adding {mgOfPumpkinSpice}mg of pumpkin spice to the {name}.");
+    }
+
+    public PumpkinSpiceLatte makePumpkinSpiceLatte()
+    {
+        prepare();
+        return this;
     }
 }

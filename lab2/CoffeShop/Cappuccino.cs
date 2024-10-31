@@ -1,7 +1,10 @@
-public class Cappuccino : Coffee
+namespace CoffeShop;
+
+internal class Cappuccino : Coffee
 {
     public int mlOfMilk { get; private set; }
     public override string name => "Cappuccino";
+
     public Cappuccino(Intensity coffeeIntensity, int mlOfMilk) : base(coffeeIntensity)
     {
         this.mlOfMilk = mlOfMilk;
@@ -12,9 +15,15 @@ public class Cappuccino : Coffee
         Console.WriteLine($"{name} milk: {mlOfMilk} ml");
     }
 
-    public override void make()
+    protected override void prepare()
     {
-        base.make();
-        Console.WriteLine($"Adding {mlOfMilk}ml of milk to the Cappuccino.");
+        base.prepare();
+        Console.WriteLine($"Adding {mlOfMilk}ml of milk to the {name}.");
+    }
+
+    public Cappuccino makeCappucino()
+    {
+        prepare();
+        return this;
     }
 }

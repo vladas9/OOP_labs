@@ -1,14 +1,13 @@
-﻿void Task_2()
-{
-    Barista barista = new Barista();
+﻿using CoffeShop;
 
-    barista.MakeCoffee(Intensity.NORMAL);
-    barista.MakeCappuccino(Intensity.STRONG, 150);
-    barista.MakePumpkinSpiceLatte(Intensity.LIGHT, 200, 50);
-    barista.MakeAmericano(Intensity.NORMAL, 250);
-    barista.MakeSyrupCappuccino(Intensity.STRONG, 150, SyrupType.VANILLA);
+var barista = new Barista();
 
-    barista.PrintAllOrders();
-}
+barista.makeCoffe(CoffeeType.COFFEE, Intensity.LIGHT);
+barista.makeCoffe(CoffeeType.AMERICANO, Intensity.NORMAL, 100);
+barista.makeCoffe(CoffeeType.CAPPUCCINO, Intensity.STRONG, mlOfMilk: 150);
+barista.makeCoffe(CoffeeType.SYRUP_CAPPUCCINO, Intensity.NORMAL, mlOfMilk: 100, syrup: SyrupType.VANILLA);
+barista.makeCoffe(CoffeeType.PUMPKIN_SPICE_LATTE, Intensity.STRONG, mlOfMilk: 200, mgOfPumpkinSpice: 50);
 
-Task_2();
+// Print all orders
+Console.WriteLine("\nAll Coffee Orders:");
+barista.PrintAllOrders();

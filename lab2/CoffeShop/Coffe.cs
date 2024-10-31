@@ -1,4 +1,6 @@
-public class Coffee
+namespace CoffeShop;
+
+internal class Coffee
 {
     public Intensity coffeeIntensity { get; private set; }
     public virtual string name => "Coffe";
@@ -13,10 +15,15 @@ public class Coffee
         Console.WriteLine($"\n{name} Intensity: {coffeeIntensity}");
     }
 
-
-    public virtual void make()
+    protected virtual void prepare()
     {
         Console.WriteLine($"\nMaking a {name}");
         Console.WriteLine($"Set Intensity to {coffeeIntensity}");
+    }
+
+    public Coffee makeCoffe()
+    {
+        prepare();
+        return this;
     }
 }

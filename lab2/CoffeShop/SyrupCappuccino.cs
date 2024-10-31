@@ -1,4 +1,5 @@
-public class SyrupCappuccino : Cappuccino
+namespace CoffeShop;
+internal class SyrupCappuccino : Cappuccino
 {
     public SyrupType syrup { get; private set; }
     public override string name => "SyrupCappuccino";
@@ -14,9 +15,15 @@ public class SyrupCappuccino : Cappuccino
         Console.WriteLine($"{name} syrup: {syrup} ml");
     }
 
-    public override void make()
+    protected override void prepare()
     {
-        base.make();
+        base.prepare();
         Console.WriteLine($"Adding {syrup} of water to the Cappuccino.");
+    }
+
+    public SyrupCappuccino makeSyrupCappuccino()
+    {
+        prepare();
+        return this;
     }
 }

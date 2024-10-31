@@ -1,3 +1,4 @@
+namespace CoffeShop;
 public enum Intensity
 {
     LIGHT,
