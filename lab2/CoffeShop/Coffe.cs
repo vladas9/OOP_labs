@@ -3,7 +3,7 @@ namespace CoffeShop;
 internal class Coffee
 {
     public Intensity coffeeIntensity { get; private set; }
-    public virtual string name => "Coffe";
+    public virtual string name => "Coffee";
 
     public Coffee(Intensity coffeeIntensity)
     {
