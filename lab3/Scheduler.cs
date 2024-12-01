@@ -1,9 +1,3 @@
-
-using System;
-using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
-
 public class Scheduler
 {
     private readonly Semaphore _semaphore;
@@ -16,14 +10,13 @@ public class Scheduler
     {
         _semaphore = semaphore;
         _queueFolder = queueFolder;
-        _readInterval = readInterval * 1000; // Convert to milliseconds
-        _serveInterval = serveInterval * 1000; // Convert to milliseconds
+        _readInterval = readInterval * 1000;
+        _serveInterval = serveInterval * 1000;
         _cancellationTokenSource = new CancellationTokenSource();
     }
 
     public void Start()
     {
-        // Start tasks for reading and serving
         var cancellationToken = _cancellationTokenSource.Token;
 
         Task.Run(() => ReadFromQueueFolderAsync(cancellationToken), cancellationToken);
@@ -46,10 +39,8 @@ public class Scheduler
                 {
                     string json = File.ReadAllText(file);
 
-                    // Add car to appropriate CarStation
                     _semaphore.ProcessCarFromJson(json);
 
-                    // Delete file after processing
                     File.Delete(file);
                     Console.WriteLine($"Processed and deleted file: {file}");
                 }
@@ -59,7 +50,7 @@ public class Scheduler
                 Console.WriteLine($"Error while reading files: {ex.Message}");
             }
 
-            await Task.Delay(_readInterval, cancellationToken); // Wait before the next read
+            await Task.Delay(_readInterval, cancellationToken);
         }
     }
 
@@ -77,7 +68,7 @@ public class Scheduler
                 Console.WriteLine($"Error while serving cars: {ex.Message}");
             }
 
-            await Task.Delay(_serveInterval, cancellationToken); // Wait before the next serve
+            await Task.Delay(_serveInterval, cancellationToken);
         }
     }
 }
