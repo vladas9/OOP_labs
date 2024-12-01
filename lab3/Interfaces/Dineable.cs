@@ -1,4 +1,4 @@
 public interface Dineable
 {
-    void ServeDinner(string carId);
+    void ServeDinner(int carId);
 }

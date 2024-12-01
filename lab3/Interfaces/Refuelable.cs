@@ -1,4 +1,4 @@
 public interface Refuelable
 {
-    void Refuel(string carId);
+    void Refuel(int carId);
 }
